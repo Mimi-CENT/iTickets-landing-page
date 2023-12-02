@@ -8,4 +8,56 @@ html {
 *::after {
 box-sizing: inherit;
 }
-  
+ 
+p{
+    padding: none;
+    margin: none;
+}
+/* Header */
+
+.header__image {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.nav__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav ul{
+    display: flex;
+    
+}
+
+.nav ul li{
+    list-style-type: none;
+    margin-right: 10px;
+}
+
+.header__reviews img{
+    width: 100px;
+    border-radius: 10%;
+}
+
+.review__info{
+    border: 2px solid red;
+    width: 300px;
+    padding: 10px;
+}
+
+.review__stars .fas.fa-star {
+    color: gold; /* Change to the desired color */
+}
+
+.review__genre--type{
+    width: fit-content;
+}
+
+.review__genre--type p{
+    background-color: #F2F2F2;
+    padding: 10px;
+    border-radius: 5px;
+}
