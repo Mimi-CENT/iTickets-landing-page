@@ -29,12 +29,16 @@ p{
 
 .nav ul{
     display: flex;
-    
 }
 
 .nav ul li{
     list-style-type: none;
+    text-decoration: none;
     margin-right: 10px;
+}
+
+.nav li a{
+    text-decoration: none;
 }
 
 .header__reviews img{
