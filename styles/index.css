@@ -8,6 +8,11 @@ html {
 *::after {
 box-sizing: inherit;
 }
+
+body{
+    margin: 0;
+    padding: 0;
+}
  
 p{
     padding: none;
@@ -15,30 +20,86 @@ p{
 }
 /* Header */
 
-.header__image {
+.header{
+    position: relative;
+}
+
+.header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 500px;
-    object-fit: cover;
+    background-color: rgba(135, 62, 202, 0.7); /* Adjust the color and opacity */
+    z-index: 1; /* Place it behind the image */
 }
 
 .nav__container{
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    position: absolute;
+    top: 0; /* Align to the top of the header */
+    left: 0;
+    z-index: 2;
+    color: white;
+    padding: 0 100px 0;
+}
+
+.intro__container {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    align-items: center;
+    padding: 4rem 5rem 10rem 5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: absolute;
+    top: 0; /* Align to the top of the header */
+    left: 0;
+    z-index: 2;
+    align-items: center;  
+}
+
+nav{
+    width: 100%;
+    height: 75px;
+    line-height: 75px;
+    padding: 0px 100px;
 }
 
 .nav ul{
-    display: flex;
+    float: right;
 }
 
 .nav ul li{
     list-style-type: none;
     text-decoration: none;
     margin-right: 10px;
+    display: inline-block;
 }
 
 .nav li a{
     text-decoration: none;
+    color: antiquewhite;
+}
+
+.header__reviews{
+    display: flex;
+}
+  
+#intro p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.header__image {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    z-index: 1;
 }
 
 .header__reviews img{
