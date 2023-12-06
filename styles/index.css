@@ -216,3 +216,38 @@ nav{
     padding-left: 20px;
     padding-right: 20px;
 }
+
+/* Advanced features */
+.advanced__features{
+    text-align: center;
+}
+
+.advanced__features--header p{
+    color:blueviolet;
+    font-size: 15px;
+    font-weight: 800;
+}
+
+.advanced__features--header h3{
+    font-size: 40px;
+    margin-top: 0;
+}
+
+.advanced__features--info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+    margin: auto;
+}
+
+.advanced__features--info div{
+    width: 500px;
+    padding: 5px;
+    box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+.advanced__features--info div:nth-child(2){
+    margin-left: 10px;
+    margin-right: 10px;
+}
