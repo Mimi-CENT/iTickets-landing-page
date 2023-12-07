@@ -178,23 +178,28 @@ nav{
 }
 
 /* Achievement */
-.achievement{
+.achievement,
+.feedback{
     text-align: center;
+    margin-top: 100px;
 }
 
-.achievement__heading{
+.achievement__heading,
+.feedback__header{
     font-weight: 600;
     background-color: blueviolet;
     padding-top: 20px;
     padding-bottom: 100px;
 }
 
-.achievement__heading p{
+.achievement__heading p,
+.feedback__header p{
     color:antiquewhite;
     font-size: 10px;
 }
 
-.achievement__heading span{
+.achievement__heading span,
+.feedback__header span{
     display: block;
     color: white;
     font-size: 30px;
@@ -218,17 +223,21 @@ nav{
 }
 
 /* Advanced features */
-.advanced__features{
+.advanced__features,
+.pricing{
     text-align: center;
+    margin-top: 100px;
 }
 
-.advanced__features--header p{
+.advanced__features--header p,
+.pricing__header p{
     color:blueviolet;
     font-size: 15px;
     font-weight: 800;
 }
 
-.advanced__features--header h3{
+.advanced__features--header h3,
+.pricing__header h3{
     font-size: 40px;
     margin-top: 0;
 }
