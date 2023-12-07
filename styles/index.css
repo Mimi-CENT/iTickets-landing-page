@@ -259,4 +259,34 @@ nav{
 .advanced__features--info div:nth-child(2){
     margin-left: 10px;
     margin-right: 10px;
+
+/* Feedback */
+.feedback__messages--container{
+    display: flex;
+    justify-content: center;
+    width: 1200px;
+    margin: auto;
 }
+
+.feedback__messages{
+    box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+.feedback__messages--container div:nth-child(2){
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.feedback__client--info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.feedback__client--info img{
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
