@@ -137,8 +137,10 @@ nav{
 }
 
 .review__info{
-    width: 300px;
+    width: 350px;
     padding: 10px;
+    background-color: #F2F2F2;
+    margin: 10px;
 }
 
 .review__stars .fas.fa-star {
