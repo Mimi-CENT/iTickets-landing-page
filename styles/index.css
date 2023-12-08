@@ -307,6 +307,9 @@ nav{
 }
 
 /* Footer */
+.footer__container{
+    padding-top: 100px;
+}
 
 .footer__container--interested{
     text-align: center;
@@ -315,6 +318,7 @@ nav{
     margin: auto;
     margin-top: 100px;
     padding: 20px;
+    border-radius: 10px;
 }
 
 .footer__container--interested button{
@@ -331,6 +335,7 @@ nav{
     align-items: center;
     background-color: blueviolet;
     color: white;
+    padding-top: 200px;
 }
 
 .footer__links{
@@ -339,15 +344,13 @@ nav{
     gap: 50px;
 }
 
-.footer__links li a{
-    color: white;
-    text-decoration: none;
-    list-style: none;
+.footer__links ul{
+    list-style-type: none;
 }
 
 .footer__links li a{
-    
-    list-style-type: none;
+    color: white;
+    text-decoration: none;
 }
 
 .footer__copyright--info{
@@ -355,4 +358,5 @@ nav{
     justify-content: space-between;
     gap: 20px;
     border-top: 2px solid white;
+    padding: 20px 0 20px;
 }
