@@ -263,11 +263,13 @@ nav{
 }
 
 .advanced__features--info{
-    display: flex;
+    /* display: flex;
     justify-content: center;
     align-items: center;
     width: 1000px;
-    margin: auto;
+    margin: auto; */
+    display: grid;  
+    grid-template-columns: repeat(10, 1fr);
 }
 
 .advanced__features--info div{
@@ -276,9 +278,21 @@ nav{
     box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.5);
 }
 
+.advanced__features--info div:nth-child(1){
+    grid-row: 1/2;
+    grid-column: 5/7;
+}
+
 .advanced__features--info div:nth-child(2){
-    margin-left: 10px;
-    margin-right: 10px;
+    /* margin-left: 10px;
+    margin-right: 10px; */
+    grid-row: 2/3;
+    grid-column: 4/6;
+}
+
+.advanced__features--info div:nth-child(3){
+    grid-row: 2/3;
+    grid-column: 6/8;
 }
 
 /* Feedback */
