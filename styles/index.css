@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Oxygen:wght@300;400;700&display=swap');
+
 /* General styles*/
 html {
     box-sizing: border-box;
@@ -71,6 +73,7 @@ p{
     justify-content: center;
     gap: 5rem;
     align-items: center;
+    font-family: 'Inter', sans-serif;
     padding: 100px 100px;
     max-width: 1200px;
     margin: 0 auto;
@@ -103,13 +106,15 @@ nav{
     text-decoration: none;
     color: antiquewhite;
 }
+
+.nav li a:hover{
+    color: white;
+    cursor: pointer;
+}
   
 .intro{
     color: #F2F2F2;
-    flex-basis: 50%;
-    max-width: 600px; /* Add this line to set a fixed width */
-    box-sizing: border-box; /* Include padding and border in the element's total width and height */
-
+    width: 800px; /* Add this line to set a fixed width */
 }
 
 .intro h1{
@@ -144,7 +149,7 @@ nav{
 }
 
 .review__info{
-    width: 350px;
+    width: 150px;
     padding: 10px;
     background-color: #F2F2F2;
     margin: 10px;
@@ -168,7 +173,9 @@ nav{
 .about,
 .tools{
     display: flex;
-    
+    justify-content: center;
+    align-items: center;
+    padding: 20px 100px;
 }
 
 .about__image,
@@ -182,14 +189,23 @@ nav{
     padding: 40px 100px 20px 10px;
 }
 
-.about__info p{
+.about__info h2,
+.tools__info h2{
+    font-family: 'Oxygen', sans-serif;
+}
+
+.about__info p,
+.tools__info p{
     font-size: 15px;
+    font-family: 'Inter', sans-serif;
+    line-height: 20px;
 }
 
 /* Achievement */
 .achievement{ 
   display: grid;
   grid-template-columns: repeat(10, 1fr);
+  font-family: 'Inter', sans-serif;
 }
 
 .achievement__heading{
@@ -252,6 +268,7 @@ nav{
 .pricing{
     text-align: center;
     margin-top: 100px;
+    font-family: 'Inter', sans-serif;
 }
 
 .advanced__features--header p,
@@ -304,6 +321,7 @@ nav{
 .feedback{
     display: grid;
     grid-template-columns: repeat(10, 1fr);
+    font-family: 'Inter', sans-serif;
 }
 
 .feedback__header{
@@ -373,6 +391,7 @@ nav{
 /* Footer */
 .footer__container{
     padding-top: 100px;
+    font-family: 'Inter', sans-serif;
 }
 
 .footer__container--interested{
