@@ -71,7 +71,7 @@ p{
     justify-content: center;
     gap: 5rem;
     align-items: center;
-    padding: 50px 100px;
+    padding: 100px 100px;
     max-width: 1200px;
     margin: 0 auto;
     position: absolute;
@@ -106,6 +106,10 @@ nav{
   
 .intro{
     color: #F2F2F2;
+    flex-basis: 50%;
+    max-width: 600px; /* Add this line to set a fixed width */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+
 }
 
 .intro h1{
