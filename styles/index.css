@@ -129,11 +129,12 @@ nav{
 }
 
 .header__reviews{
-    display: grid;
+    display: flex;
 }
 
 .header__reviews img{
-    width: 100px;
+    width: 50px;
+    height: 60px;
     border-radius: 10%;
 }
 
