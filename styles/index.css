@@ -360,6 +360,16 @@ nav{
     padding: 20px;
 }
 
+.price{
+    margin: 0 auto;
+    color: blue;
+    width: 50px;
+    padding: 10px;
+    font-weight: 600;
+    background-color: rgb(228, 223, 223);
+    border-radius: 50%;
+}
+
 /* Footer */
 .footer__container{
     padding-top: 100px;
