@@ -152,7 +152,7 @@ nav{
     width: 150px;
     padding: 10px;
     background-color: #F2F2F2;
-    margin: 10px;
+    margin: 10px;  
 }
 
 .review__stars .fas.fa-star {
@@ -216,6 +216,18 @@ nav{
 .achievement__info{
     grid-row: 2/4;
     grid-column: 3/9;
+    color: rgb(15, 15, 108);
+    padding: 20px;
+}
+
+.achievement__info h3{
+    font-size: 60px;
+    margin: 0;
+    padding-top: 10px;
+}
+
+.achievement__info p{
+    font-size: 18px;
 }
 
 .achievement,
