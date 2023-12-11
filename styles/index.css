@@ -292,8 +292,11 @@ nav{
 
 .advanced__features--header h3,
 .pricing__header h3{
-    font-size: 40px;
+    font-size: 20px;
+    margin: auto;
     margin-top: 0;
+    width: 500px;
+    margin-bottom: 50px;
 }
 
 .advanced__features--info{
@@ -307,9 +310,17 @@ nav{
 }
 
 .advanced__features--info div{
-    width: 500px;
-    padding: 5px;
+    width: 300px;
+    padding: 25px;
     box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+.advanced__features--info h3{
+    color: navy;
+}
+
+.advanced__features--info p{
+    color: rgb(2, 2, 84);
 }
 
 .advanced__features--info div:nth-child(1){
