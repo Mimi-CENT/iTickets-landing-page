@@ -398,17 +398,32 @@ nav{
 }
 
 .pricing__container--item{
+    margin: auto;
     padding: 20px;
+    width: 250px;
+    height: 350px;
 }
 
-.price{
+.pricing__container--item .price{
     margin: 0 auto;
+    top: 50%;
+    left: 50%;
     color: blue;
-    width: 50px;
+    width: 70px;
+    height: 80px;
     padding: 10px;
     font-weight: 600;
     background-color: rgb(228, 223, 223);
     border-radius: 50%;
+}
+
+.pricing__container--item .standard__button{
+    border: none;
+    padding: 10px 25px;
+    font-weight: 600;
+    background-color: blueviolet;
+    color: white;
+    border-radius: 5px;
 }
 
 /* Footer */
