@@ -117,12 +117,13 @@ nav{
 }
 
 .intro h1{
-    font-size: 38px;
+    font-size: 50px;
 }
 
 .intro p {
     font-size: 15px;
     line-height: 1.5;
+    width: 500px;
 }
 
 .header__image {
