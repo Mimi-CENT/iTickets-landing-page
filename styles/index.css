@@ -72,17 +72,15 @@ p{
 .intro__container {
     display: flex;
     justify-content: center;
-    /* gap: 5rem; */
     align-items: center;
     font-family: 'Inter', sans-serif;
+    height: 500px;
     padding: 100px 100px;
-    max-width: 1200px;
-    margin: 0 auto;
     position: absolute;
     top: 0; /* Align to the top of the header */
     left: 0;
+    right: 0;
     z-index: 2;
-    align-items: center;  
 }
 
 nav{
@@ -146,7 +144,8 @@ nav{
 
 .first__review,
 .second__review{
-    display: flex;
+    display: grid;
+    /* grid-template-columns: repeat(10, 1fr); */
 }
 
 .review__info{
