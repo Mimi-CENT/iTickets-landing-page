@@ -134,6 +134,7 @@ nav{
 
 .header__reviews{
     display: flex;
+    justify-content: space-between;
 }
 
 .header__reviews img{
@@ -144,8 +145,16 @@ nav{
 
 .first__review,
 .second__review{
-    display: grid;
-    /* grid-template-columns: repeat(10, 1fr); */
+    position: relative;
+    overflow: hidden;
+}
+
+.image {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px; /* Adjust the width as needed */
+    margin-left: -75px;
 }
 
 .review__info{
@@ -153,7 +162,8 @@ nav{
     height: 120px;
     padding: 10px;
     background-color: #F2F2F2;
-    margin: 10px;  
+    margin: 10px;
+    margin-left: 20px;  
 }
 
 .review__title{
