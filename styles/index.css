@@ -321,8 +321,7 @@ nav{
     font-weight: 800;
 }
 
-.advanced__features--header h3,
-.pricing__header h3{
+.advanced__features--header h3{
     font-size: 30px;
     margin: auto;
     margin-top: 0;
@@ -457,31 +456,56 @@ nav{
     justify-content: center;
 }
 
+.pricing{
+    text-align: center;
+    margin-top: 5em;
+    font-family: 'Inter', sans-serif;
+}
+
+.pricing__header p{
+    color:blueviolet;
+    font-size: 1rem;
+    font-weight: 800;
+}
+
+.pricing__header h3{
+    font-size: 1.5rem;
+    text-align: center;
+    /* margin: auto; */
+    margin-top: 0;
+    margin-bottom: 1.5em;
+}
+
 .pricing__container--item:nth-child(2){
-    box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
     margin: 0;
 }
 
 .pricing__container--item{
     margin: 0 10px;
     padding: 20px;
-    width: 350px;
-    padding: 40px 40px;
+    width: 100%;
+    padding: 10px 10px;
     position: relative;
 }
 
 .pricing__container--item h4{
     color: rgb(59, 10, 105);
     font-weight: 600;
-    font-size: 30px;
+    font-size: 20px;
     margin-top: 0;
+}
+
+.pricing__container--item p{
+    font-size: 0.8rem;
+    text-align: center;
 }
 
 .price{
     color: rgb(94, 23, 160);
     background-color: rgb(231, 227, 233);
     border-radius: 50%;
-    font-size: 50px;
+    font-size: 30px;
     font-weight: 600;
     width: 3em;
     height: 3em;
@@ -493,14 +517,14 @@ nav{
 
 .pricing__container--item .standard__button{
     border: none;
-    padding: 10px 25px;
-    font-size: 20px;
+    padding: 5px 10px;
+    font-size: 14px;
     font-weight: 600;
     background-color: blueviolet;
     color: white;
     border-radius: 5px;
-    margin-bottom: -20px;
-    margin-left: -65px;
+    margin-bottom: -1em;
+    margin-left: -3em;
     position: absolute;
     bottom: 0;
 }
@@ -559,4 +583,33 @@ nav{
     gap: 20px;
     border-top: 2px solid white;
     padding: 20px 0 20px;
+}
+
+
+/* MEDIA QUERIES */
+@media screen and (min-width:769px) and (max-width: 1200px){
+
+    /* PRICE */
+    .pricing__container--item{
+        width: 350px;
+    }
+    
+    .pricing__container--item h4{
+        font-size: 30px;
+    }
+    
+    .price{
+        font-size: 50px;
+        width: 3em;
+        height: 3em;
+    }
+    
+    .pricing__container--item .standard__button{
+        font-size: 20px;
+        margin-top: -20px;
+        margin-left: -65px;
+        position: absolute;
+        bottom: 0;
+    }
+    
 }
