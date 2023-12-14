@@ -331,11 +331,6 @@ nav{
 }
 
 .advanced__features--info{
-    /* display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 1000px;
-    margin: auto; */
     display: grid;  
     grid-template-columns: repeat(10, 1fr);
 }
@@ -344,13 +339,34 @@ nav{
     width: 300px;
     padding: 25px;
     box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+.advanced__features--info div:nth-child(1) img{
+    width: 30px;
+    height: 50px;
+}
+
+.advanced__features--info div:nth-child(2) img{
+    width: 50px;
+    height: 50px;
+    display: block;
+    float: left;
+    margin-right: 10px;
+    border: 2px solid red;
+}
+
+.advanced__features--info div:nth-child(3) img{
+    width: 50px;
+    height: 50px;
+    float: right;
 }
 
 .advanced__features--info h3{
     color: navy;
 }
 
-.advanced__features--info p{
+.advanced__features--info p:not(1){
     color: rgb(2, 2, 84);
 }
 
