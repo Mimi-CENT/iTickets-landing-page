@@ -310,7 +310,7 @@ nav{
 .advanced__features,
 .pricing{
     text-align: center;
-    margin-top: 100px;
+    margin-top: 50px;
     font-family: 'Inter', sans-serif;
 }
 
@@ -322,68 +322,49 @@ nav{
 }
 
 .advanced__features--header h3{
-    font-size: 30px;
-    margin: auto;
-    margin-top: 0;
-    width: 800px;
-    margin-bottom: 50px;
+    margin: 0 auto;
+    width: 100%;
+    color: navy;
+    font-size: 15px;
 }
 
 .advanced__features--info{
-    display: grid;  
-    grid-template-columns: repeat(10, 1fr);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding: 70px;
+    text-align: center;
 }
 
 .advanced__features--info div{
-    width: 300px;
+    width: 100%;
     padding: 25px;
     box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.5);
     overflow: hidden;
+    margin-bottom: 20px;
 }
 
-.advanced__features--info div:nth-child(1) img{
+.advanced__features--info div img{
     width: 30px;
-    height: 50px;
-}
-
-.advanced__features--info div:nth-child(2) img{
-    width: 50px;
-    height: 50px;
+    height: 30px;
     display: block;
-    float: left;
-    margin-right: 10px;
-    border: 2px solid red;
+    margin: 0 auto 10px; /* Center image and add spacing */
+    
 }
 
-.advanced__features--info div:nth-child(3) img{
-    width: 50px;
-    height: 50px;
-    float: right;
+.advanced__features--info p{
+    font-size: 10px;
 }
 
 .advanced__features--info h3{
     color: navy;
+    font-size: 15px;
+    margin-top: 0;
 }
 
-.advanced__features--info p:not(1){
+.advanced__features--info p:not(:first-child){
     color: rgb(2, 2, 84);
-}
-
-.advanced__features--info div:nth-child(1){
-    grid-row: 1/2;
-    grid-column: 5/7;
-}
-
-.advanced__features--info div:nth-child(2){
-    /* margin-left: 10px;
-    margin-right: 10px; */
-    grid-row: 2/3;
-    grid-column: 4/6;
-}
-
-.advanced__features--info div:nth-child(3){
-    grid-row: 2/3;
-    grid-column: 6/8;
 }
 
 /* Feedback */
