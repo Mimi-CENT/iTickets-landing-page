@@ -563,7 +563,17 @@ nav{
 
 
 /* MEDIA QUERIES */
-@media screen and (min-width:769px) and (max-width: 1200px){
+@media screen and (min-width:769px) and (max-width: 1024px){
+
+    /* ADVANCED FEATURES */
+    .advanced__features--info{
+        flex-direction: row;
+    }
+
+    /* FEEDBACK */
+    .feedback__messages--container{
+        flex-direction: row;
+    }
 
     /* PRICE */
     .pricing__container--item{
@@ -588,4 +598,8 @@ nav{
         bottom: 0;
     }
     
+}
+
+@media screen and (min-width:1025px) and (max-width: 1200px){
+
 }
