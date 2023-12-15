@@ -196,25 +196,28 @@ nav{
 .about,
 .tools{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px 100px;
+    padding: 10px 50px;
 }
 
 .about__image,
 .tools__image{
-    flex-basis: 50%;
+    width: 50px;
+    height: 50px;
+    display: block;
 }
 
 .about__info,
 .tools__info{
-    flex-basis: 50%;
-    padding: 40px 100px 20px 10px;
+    padding: 10px;
 }
 
 .about__info h2,
 .tools__info h2{
     font-family: 'Oxygen', sans-serif;
+    text-align: left;
 }
 
 .about__info p,
@@ -222,6 +225,7 @@ nav{
     font-size: 15px;
     font-family: 'Inter', sans-serif;
     line-height: 20px;
+    text-align: justify;
 }
 
 /* Achievement */
