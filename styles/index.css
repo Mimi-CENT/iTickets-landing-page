@@ -428,18 +428,21 @@ nav{
 
 /* Footer */
 .footer__container{
-    padding-top: 100px;
+    width: 100%;
     font-family: 'Inter', sans-serif;
 }
 
 .footer__container--interested{
+    position: relative;
     text-align: center;
-    width: 600px;
+    width: 80%;
     box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.5);
     margin: auto;
-    margin-top: 100px;
-    padding: 20px;
+    margin-top: 50px;
+    margin-bottom: -10px;
+    padding: 10px;
     border-radius: 10px;
+    z-index: 2;
 }
 
 .footer__container--interested button{
@@ -454,31 +457,49 @@ nav{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
     background-color: blueviolet;
     color: white;
-    padding-top: 200px;
+    padding-top: 50px;
+    width: 100%;
+    z-index: 1;
 }
 
 .footer__links{
     display: flex;
     justify-content: space-between;
-    gap: 50px;
+    gap: 10px;
+}
+
+.footer__links h4{
+    font-size: 15px;
+    margin-bottom: 0;
 }
 
 .footer__links ul{
     list-style-type: none;
+    margin: 0; /* Add this line to remove margin */
+    padding: 0;
 }
 
 .footer__links li a{
     color: white;
     text-decoration: none;
+    list-style-type: none;
+    font-size: 10px;
 }
 
 .footer__copyright--info{
     display: flex;
     flex-direction: column;
     border-top: 2px solid white;
-    margin: 0;
+    margin-top: 5px;
+    width: 90%;
+}
+
+.footer__copyright--info p{
+    font-size: 12px;
+    margin: 5px 0 5px;
 }
 
 
