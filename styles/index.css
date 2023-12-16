@@ -239,20 +239,23 @@ nav{
     color: rgb(15, 15, 108);
     align-items: center;
     justify-content: center;
+    width: 80%;
     margin: 0 auto;
+    margin-top: -25px;
     text-align: center;
     background-color: white;
+    border: 2px solid green;
     box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.5);
 }
 
 .achievement__info div{
-    padding: 20px;
+    padding: 10px;
+    width: 80%;
 }
 
 .achievement__info h3{
     font-size: 20px;
     margin: 0;
-    padding-top: 5px;
 }
 
 .achievement__info p{
@@ -272,7 +275,7 @@ nav{
     font-weight: 600;
     background-color: blueviolet;
     padding-top: 20px;
-    padding-bottom: 50px;
+    padding-bottom: 20px;
 }
 
 .achievement__heading p,
@@ -322,7 +325,7 @@ nav{
     flex-direction: column;
     align-items: center;
     margin: 0 auto;
-    padding: 70px;
+    padding: 50px;
     text-align: center;
 }
 
@@ -343,7 +346,7 @@ nav{
 }
 
 .advanced__features--info p{
-    font-size: 10px;
+    font-size: 15px;
 }
 
 .advanced__features--info h3{
@@ -359,20 +362,6 @@ nav{
 /* Feedback */
 .feedback{
     font-family: 'Inter', sans-serif;
-}
-
-.feedback__header{
-    grid-row: 1/3;
-    grid-column: 1/12;
-
-}
-
-.feedback__header p{
-    font-size: 9px;
-}
-
-.feedback__header span{
-    font-size: 12px;
 }
 
 .feedback__messages--container{
@@ -394,7 +383,7 @@ nav{
 }
 
 .feedback__messages > p{
-    font-size: 12px;
+    font-size: 15px;
 }
 
 .feedback__client--info{
@@ -408,7 +397,7 @@ nav{
     height: 40px;
     object-fit: cover;
     border-radius: 50%;
-    margin-left: -55px;
+    margin-left: -5px;
 }
 
 .feedback__client--info div{
@@ -418,12 +407,12 @@ nav{
 
 .feedback__client--info div h3{
     margin-bottom: 5px;
-    font-size: 12px;
+    font-size: 15px;
 }
 
 .feedback__client--info div p{
     margin-top: 0;
-    font-size: 12px;
+    font-size: 15px;
 }
 
 /* Pricing */
@@ -564,6 +553,11 @@ nav{
 /* MEDIA QUERIES */
 @media screen and (min-width:769px) and (max-width: 1024px){
 
+    /* ACHIEVEMENT */
+    .achievement__info h3{
+        font-size: 25px;
+    }
+
     /* ADVANCED FEATURES */
     .advanced__features--info{
         flex-direction: row;
@@ -600,5 +594,13 @@ nav{
 }
 
 @media screen and (min-width:1025px) and (max-width: 1200px){
+    
+    /* ACHIEVEMENT */
+    .achievement__info h3{
+        font-size: 30px;
+    }
 
+    .achievement__info p{
+        font-size: 20px;
+    }
 }
