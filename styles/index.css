@@ -22,7 +22,7 @@ p{
 }
 
 .download__button{
-    padding: 10px 5px;
+    padding: 10px 10px;
     font-size: 12px;
     font-weight: 600;
     border-radius: 5px;
@@ -59,6 +59,8 @@ p{
 
 .nav__container{
     display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     position: absolute;
     top: 0; /* Align to the top of the header */
@@ -96,6 +98,7 @@ nav{
     list-style-type: none;
     text-decoration: none;
     display: inline-block;
+    padding: 0 5px;
 }
 
 .nav li a{
@@ -505,6 +508,33 @@ nav{
 
 /* MEDIA QUERIES */
 @media screen and (min-width:769px) and (max-width: 1024px){
+
+    /* HEADER */
+    .nav__container h2{
+        font-size: 30px;
+    }
+
+    .nav__list li{
+        font-size: 15px;
+    }
+
+    .intro__container{
+        width: 50%;
+        margin-top: 110px;
+    }
+
+    .intro h1{
+        font-size: 30px;
+    }
+
+    .intro p{
+        font-size: 20px;
+    }
+
+    .download__button{
+        font-size: 15px;
+        margin-top: 10px;
+    }
 
     /* ABOUT & TOOLS */
     .about,
