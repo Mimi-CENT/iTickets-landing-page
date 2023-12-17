@@ -568,8 +568,17 @@ nav{
     }
 
     /* ADVANCED FEATURES */
+    .advanced__features--header p{
+        font-size: 15px;
+    }
+
+    .advanced__features--header h3{
+        font-size: 25px;
+    }
+
     .advanced__features--info{
         flex-direction: row;
+        gap: 10px;
     }
 
     /* FEEDBACK */
@@ -577,6 +586,7 @@ nav{
         flex-direction: row;
         align-items: center;
         justify-content: center;
+        gap: 10px;
     }
 
     /* PRICE */
