@@ -620,7 +620,7 @@ nav{
     
 }
 
-@media screen and (min-width:1025px) and (max-width: 1200px){
+@media screen and (min-width:1025px){
     
     /* HEADER */
     .header__image {
@@ -674,14 +674,15 @@ nav{
     /* ACHIEVEMENT */
     .achievement__info{
         width: 80%;
+        padding: 10px;
     }
 
     .achievement__info h3{
-        font-size: 30px;
+        font-size: 40px;
     }
 
     .achievement__info p{
-        font-size: 20px;
+        font-size: 30px;
     }
 
     /* ADVANCED FEATURES */
