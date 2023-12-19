@@ -444,12 +444,21 @@ nav{
     text-align: center;
     width: 300px;
     box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.5);
-    margin: auto;
-    margin-top: 50px;
-    margin-bottom: -10px;
+    margin: 50px auto 10px;
     padding: 10px;
     border-radius: 10px;
     z-index: 2;
+}
+
+.footer__container--interested h3{
+    color: darkblue;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.footer__container--interested p{
+    color: rgb(87, 87, 189);
 }
 
 .footer__container--interested button{
@@ -476,6 +485,7 @@ nav{
     display: flex;
     justify-content: space-between;
     gap: 10px;
+    width: 70%;
 }
 
 .footer__links h4{
@@ -766,7 +776,7 @@ nav{
     /* PRICE */
     .pricing__container--item{
         width: 350px;
-        padding: 10px 5px;
+        padding: 30px 20px;
     }
     
     .pricing__container--item h4{
@@ -789,7 +799,44 @@ nav{
 
     /* FOOTER */
     .footer__container--interested{
-        width: 600px;
+        width: 700px;
+        padding: 10px 0;
+        margin: 100px auto 50px;
+    }
+
+    .footer__container--interested h3{
+        font-size: 35px;
+        
+    }
+
+    .footer__links{
+        gap: 20px;
+        margin-bottom: 10px;
+    }
+
+    .footer__links h4{
+        font-size: 15px;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+
+    .footer__links li a{
+        font-size: 15px;
+        line-height: 1.5;
+        color: rgb(241, 235, 235);
+    }
+
+    .footer__copyright--info{
+        flex-direction: row;
+        justify-content: space-between;
+        font-size: 35px;
+        gap: 20px;
+        width: 70%;
+        padding: 20px 0 20px;
+    }
+
+    .footer__copyright--info p{
+        font-size: 15px;
     }
     
 }
