@@ -139,7 +139,7 @@ nav{
     gap: 10px;
     justify-content: center;
     align-items: center;
-    padding: 10px 50px;
+    padding: 10px 60px;
 }
 
 .about__image,
@@ -150,7 +150,6 @@ nav{
 .about__info,
 .tools__info{
     padding: 10px;
-    width: 50%;
 }
 
 .about__info h2,
@@ -511,7 +510,7 @@ nav{
     flex-direction: column;
     border-top: 2px solid white;
     margin-top: 5px;
-    width: 90%;
+    width: 70%;
 }
 
 .footer__copyright--info p{
@@ -566,6 +565,11 @@ nav{
         flex-basis: 50%;
     }
 
+    .about__info,
+    .tools__info{
+        width: 50%;
+    }
+
     /* ACHIEVEMENT */
     .achievement__info{
         width: 80%;
@@ -599,7 +603,7 @@ nav{
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        gap: 10px;
+        gap: 20px;
     }
 
     /* PRICE */
@@ -691,10 +695,15 @@ nav{
         flex-basis: 50%;
     }
 
+    .about__info,
+    .tools__info{
+        width: 50%;
+    }
+
     /* ACHIEVEMENT */
     .achievement__info{
         width: 65%;
-        padding: 20px;
+        padding: 25px;
     }
 
     .achievement__info h3{
@@ -771,6 +780,11 @@ nav{
         flex-direction: row;
         align-items: center;
         justify-content: center;
+        gap: 20px;
+    }
+
+    .feedback__messages{
+        width: 400px;
     }
 
     /* PRICE */
