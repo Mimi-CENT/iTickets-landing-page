@@ -34,6 +34,8 @@ p{
     color: white;
     font-weight: 600;
     border: none;
+    border-radius: 3px;
+    padding: 15px 35px;
 }
 
 
@@ -108,7 +110,7 @@ nav{
 
 .nav li a{
     text-decoration: none;
-    color: antiquewhite;
+    color: rgb(221, 207, 188);
 }
 
 .nav li a:hover{
@@ -134,6 +136,7 @@ nav{
 .tools{
     display: flex;
     flex-direction: column;
+    gap: 10px;
     justify-content: center;
     align-items: center;
     padding: 10px 50px;
@@ -141,12 +144,13 @@ nav{
 
 .about__image,
 .tools__image{
-    width: 80%
+    width: 50%
 }
 
 .about__info,
 .tools__info{
     padding: 10px;
+    width: 50%;
 }
 
 .about__info h2,
@@ -547,11 +551,6 @@ nav{
         gap: 5px;
     }
 
-    .achievement__info,
-    .tools__info{
-        width: 50%;
-    }
-
     .about__image,
     .tools__image{
         flex-basis: 50%;
@@ -638,6 +637,10 @@ nav{
         height: 500px;
     }
 
+    .nav__container{
+        padding: 5px 140px 0 140px;
+    }
+
     .nav__container h2{
         font-size: 30px;
     }
@@ -648,11 +651,11 @@ nav{
 
     .intro__container{
         width: 50%;
-        margin-top: 95px;
+        padding: 5px 140px 0 140px;
     }
 
     .intro h1{
-        font-size: 45px;
+        font-size: 50px;
     }
 
     .intro p{
@@ -669,12 +672,8 @@ nav{
     .about,
     .tools{
         flex-direction: row;
-        gap: 5px;
-    }
-
-    .achievement__info,
-    .tools__info{
-        width: 50%;
+        gap: 10px;
+        padding: 50px 120px;
     }
 
     .about__image,
@@ -684,8 +683,8 @@ nav{
 
     /* ACHIEVEMENT */
     .achievement__info{
-        width: 80%;
-        padding: 10px;
+        width: 65%;
+        padding: 20px;
     }
 
     .achievement__info h3{
@@ -716,8 +715,6 @@ nav{
     }
     
     .advanced__features--info div:nth-child(2){
-        /* margin-left: 10px;
-        margin-right: 10px; */
         grid-row: 2/3;
         grid-column: 2/6;
     }
