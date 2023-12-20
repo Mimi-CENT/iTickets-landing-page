@@ -797,6 +797,30 @@ nav{
 
     .feedback__messages{
         width: 400px;
+
+    }
+
+    .feedback__messages > p{
+        font-size: 18px;
+        font-style: italic;
+        color: navy;
+    }
+
+    .feedback__client--info{
+        width: 100%;
+        padding-top: 0;
+    }
+
+    .feedback__client--info img{
+        margin-left: -100px;
+    }
+
+    .feedback__client--info div h3{
+        font-size: 20px;
+    }
+    
+    .feedback__client--info div p{
+        font-size: 16px;
     }
 
     /* PRICE */
