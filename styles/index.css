@@ -687,7 +687,7 @@ nav{
     .about,
     .tools{
         flex-direction: row;
-        gap: 10px;
+        gap: 50px;
         padding: 50px 120px;
     }
 
@@ -699,6 +699,17 @@ nav{
     .about__info,
     .tools__info{
         width: 50%;
+    }
+
+    .about__info h2,
+    .tools__info h2{
+        font-size: 35px;
+    }
+
+    .about__info p,
+    .tools__info p{
+        font-size: 20px;
+        line-height: 1;
     }
 
     /* ACHIEVEMENT */
