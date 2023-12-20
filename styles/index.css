@@ -832,6 +832,12 @@ nav{
     .pricing__container--item h4{
         font-size: 30px;
     }
+
+    .pricing__container--item p{
+        font-size: 20px;
+        color: rgb(16, 16, 87);
+        line-height: 1.5;
+    }
     
     .price{
         font-size: 50px;
@@ -840,9 +846,10 @@ nav{
     }
     
     .pricing__container--item .standard__button{
-        font-size: 20px;
+        font-size: 25px;
         margin-top: -20px;
         margin-left: -65px;
+        padding: 10px 15px;
         position: absolute;
         bottom: 0;
     }
