@@ -444,7 +444,7 @@ nav{
     text-align: center;
     width: 300px;
     box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.5);
-    margin: 50px auto 10px;
+    margin: 50px auto 20px;
     padding: 10px;
     border-radius: 10px;
     z-index: 2;
@@ -734,10 +734,22 @@ nav{
     .advanced__features--info{
         display: grid;  
         grid-template-columns: repeat(10, 1fr);
+        flex-direction: row;
+        gap: 10px;
+        width: 800px;
     }
 
     .advanced__features--info div{
-        padding: 30px;
+        padding: 20px 25px;
+    }
+
+    .advanced__features--info div h3{
+        font-size: 20px;
+    }
+
+    .advanced__features--info div p{
+        font-size: 20px;
+        text-align: left;
     }
 
     .advanced__features--info div:nth-child(1){
@@ -780,11 +792,6 @@ nav{
 
     .advanced__features--header h3{
         font-size: 25px;
-    }
-
-    .advanced__features--info{
-        flex-direction: row;
-        gap: 10px;
     }
 
     /* FEEDBACK */
