@@ -538,7 +538,7 @@ nav{
 
     .intro__container{
         width: 50%;
-        margin-top: 90px;
+        margin-top: 70px;
     }
 
     .intro h1{
@@ -665,8 +665,8 @@ nav{
     }
 
     .intro__container{
-        width: 50%;
-        padding: 5px 140px 0 140px;
+        /* padding: 5px 100px 0 100px; */
+        margin-bottom: 20px;
     }
 
     .intro h1{
