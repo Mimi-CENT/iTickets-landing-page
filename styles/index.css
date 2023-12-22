@@ -21,6 +21,10 @@ p{
     margin: none;
 }
 
+button{
+    cursor: pointer;
+}
+
 .download__button{
     padding: 10px 10px;
     font-size: 12px;
@@ -37,6 +41,12 @@ p{
     border: none;
     border-radius: 3px;
     padding: 18px 38px;
+}
+
+.info__button:hover{
+    box-shadow: 0 0 5px blueviolet;
+    background-color: white;
+    color: blueviolet;
 }
 
 
@@ -538,6 +548,8 @@ nav{
 
     .nav__container{
         display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .nav__container h2{
@@ -670,10 +682,17 @@ nav{
 
     .nav__container{
         padding: 5px 140px 10px 140px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .nav__container h2{
         font-size: 30px;
+    }
+
+    .nav ul{
+        float: right;
     }
 
     .nav__list li{
@@ -683,6 +702,7 @@ nav{
     .intro__container{
         padding: 5px 140px 10px 140px;
         margin-bottom: 20px;
+        width: 70%;
     }
 
     .intro h1{
