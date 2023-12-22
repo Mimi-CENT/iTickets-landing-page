@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Oxygen:wght@300;400;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Oxygen:wght@300;400;700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,300&family=Space+Mono&family=Ubuntu:wght@300&display=swap');
 
 /* General styles*/
 html {
@@ -14,6 +15,7 @@ box-sizing: inherit;
 body{
     margin: 0;
     padding: 0;
+    font-family: 'Lato', sans-serif;
 }
  
 p{
@@ -23,6 +25,7 @@ p{
 
 button{
     cursor: pointer;
+    font-family: 'Lato', sans-serif;
 }
 
 .download__button{
@@ -43,7 +46,9 @@ button{
     padding: 18px 38px;
 }
 
-.info__button:hover{
+.info__button:hover,
+.standard__button:hover,
+.download__button:hover{
     box-shadow: 0 0 5px blueviolet;
     background-color: white;
     color: blueviolet;
@@ -143,11 +148,13 @@ nav{
 
 .intro h1{
     font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 .intro p {
     font-size: 15px;
     line-height: 1.2;
+    font-family: 'Lato', sans-serif;
 }
 
 /* About && Tools */
@@ -159,6 +166,7 @@ nav{
     justify-content: center;
     align-items: center;
     padding: 10px 60px;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 .about__image,
@@ -405,7 +413,7 @@ nav{
 
 .pricing__container--item{
     margin: 0 10px;
-    padding: 20px;
+    padding: 30px 25px;
     width: 100%;
     padding: 10px 10px;
     position: relative;
