@@ -66,7 +66,7 @@ p{
 }
 
 .nav__container{
-    display: flex;
+    display: block;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -94,12 +94,20 @@ p{
     padding-right: 5%;
 }
 
+.page__title{
+    text-align: center;
+    margin-bottom: 0;
+}
+
 nav{
     width: 100%;
+    display: block;
 }
 
 .nav ul{
-    float: right;
+    align-items: center;
+    display: block;
+    margin: 0 auto;
 }
 
 .nav ul li{
@@ -528,8 +536,16 @@ nav{
         height: 400px;
     }
 
+    .nav__container{
+        display: flex;
+    }
+
     .nav__container h2{
         font-size: 25px;
+    }
+
+    .nav ul{
+        float: right;
     }
 
     .nav__list li{
