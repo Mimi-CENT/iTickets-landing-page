@@ -19,8 +19,8 @@ body{
 }
  
 p{
-    padding: none;
-    margin: none;
+    padding: 0;
+    margin: 0;
 }
 
 button{
@@ -56,7 +56,6 @@ button{
 
 
 /* Header */
-
 .header{
     position: relative;
     width: 100%;
@@ -76,8 +75,8 @@ button{
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(135, 62, 202, 0.7); /* Adjust the color and opacity */
-    z-index: 1; /* Place it behind the image */
+    background-color: rgba(135, 62, 202, 0.7); /* Also adjust opacity */
+    z-index: 1; /* Place behind the image */
 }
 
 .nav__container{
@@ -162,9 +161,9 @@ nav{
 .tools{
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 10px;
     justify-content: center;
-    align-items: center;
     padding: 10px 60px;
     font-family: 'Ubuntu', sans-serif;
 }
@@ -205,8 +204,7 @@ nav{
     align-items: center;
     justify-content: center;
     width: 80%;
-    margin: 0 auto;
-    margin-top: -25px;
+    margin: -25px auto 0;
     text-align: center;
     background-color: white;
     box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.5);
@@ -238,8 +236,7 @@ nav{
 .feedback__header{
     font-weight: 600;
     background-color: blueviolet;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 20px 0;
 }
 
 .achievement__heading p,
@@ -253,8 +250,7 @@ nav{
     display: block;
     color: white;
     font-size: 30px;
-    margin-top: 15px;
-    margin-bottom: 20px;
+    margin: 15px 0 20px;
 }
 
 .achievement__info div:nth-child(2){
@@ -334,10 +330,9 @@ nav{
     align-items: center;
     gap: 10px;
     width: 100%;
-    margin: auto;
+    margin: -20px auto 0;
     padding: 0 50px;
     text-align: center;
-    margin-top: -20px;
 }
 
 .feedback__messages{
@@ -388,22 +383,20 @@ nav{
 
 .pricing{
     text-align: center;
-    margin-top: 5em;
+    margin-top: 60px;
     font-family: 'Inter', sans-serif;
 }
 
 .pricing__header p{
     color:blueviolet;
-    font-size: 1rem;
+    font-size: 16px;
     font-weight: 800;
 }
 
 .pricing__header h3{
-    font-size: 1.5rem;
+    font-size: 24px;
     text-align: center;
-    /* margin: auto; */
-    margin-top: 0;
-    margin-bottom: 1.5em;
+    margin: 0 0 24px;
 }
 
 .pricing__container--item:nth-child(2){
@@ -413,9 +406,8 @@ nav{
 
 .pricing__container--item{
     margin: 0 10px;
-    padding: 30px 25px;
+    padding: 30px 30px;
     width: 100%;
-    padding: 10px 10px;
     position: relative;
 }
 
@@ -427,22 +419,22 @@ nav{
 }
 
 .pricing__container--item p{
-    font-size: 0.8rem;
+    font-size: 12.8px;
     text-align: center;
 }
 
 .price{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 10px;
     color: rgb(94, 23, 160);
     background-color: rgb(231, 227, 233);
     border-radius: 50%;
     font-size: 30px;
     font-weight: 600;
-    width: 3em;
-    height: 3em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
+    width: 60px;
+    height: 60px;
 }
 
 .pricing__container--item .standard__button{
@@ -453,8 +445,7 @@ nav{
     background-color: blueviolet;
     color: white;
     border-radius: 5px;
-    margin-bottom: -1em;
-    margin-left: -3em;
+    margin: 0 0 -15px -45px;
     position: absolute;
     bottom: 0;
 }
@@ -479,12 +470,12 @@ nav{
 .footer__container--interested h3{
     color: darkblue;
     font-weight: 600;
-    margin-top: 0;
-    margin-bottom: 0;
+    margin: 10px auto;
 }
 
 .footer__container--interested p{
     color: rgb(87, 87, 189);
+    margin: 10px auto;
 }
 
 .footer__container--interested button{
@@ -502,7 +493,7 @@ nav{
     position: relative;
     background-color: blueviolet;
     color: white;
-    padding-top: 50px;
+    padding: 15px 0;
     width: 100%;
     z-index: 1;
 }
@@ -515,13 +506,13 @@ nav{
 }
 
 .footer__links h4{
-    font-size: 15px;
+    font-size: 10px;
     margin-bottom: 0;
 }
 
 .footer__links ul{
     list-style-type: none;
-    margin: 0; /* Add this line to remove margin */
+    margin: 0;
     padding: 0;
 }
 
