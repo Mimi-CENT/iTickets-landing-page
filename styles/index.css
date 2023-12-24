@@ -1,6 +1,7 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Oxygen:wght@300;400;700&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,300&family=Space+Mono&family=Ubuntu:wght@300&display=swap');
 
+
 /* General styles*/
 html {
     box-sizing: border-box;
@@ -175,7 +176,10 @@ nav{
 
 .about__image,
 .tools__image{
-    width: 50%
+    width: 50%;
+    max-width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    display: block;
 }
 
 .about__info,
@@ -185,14 +189,13 @@ nav{
 
 .about__info h2,
 .tools__info h2{
-    font-family: 'Oxygen', sans-serif;
     text-align: left;
 }
 
 .about__info p,
 .tools__info p{
     font-size: 15px;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Space Mono', monospace;
     line-height: 20px;
     text-align: justify;
 }
@@ -733,15 +736,15 @@ nav{
     }
 
     .intro h1{
-        font-size: 50px;
+        font-size: 55px;
     }
 
     .intro p{
-        font-size: 20px;
+        font-size: 25px;
     }
 
     .download__button{
-        font-size: 15px;
+        font-size: 20px;
         margin-top: 15px;
     }
     
