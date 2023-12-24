@@ -29,6 +29,9 @@ button{
 }
 
 .download__button{
+    display: flex;
+    align-items: center;
+    gap: 5px;
     padding: 10px 10px;
     margin-top: 10px;
     font-size: 12px;
@@ -144,7 +147,7 @@ nav{
 }
   
 .intro{
-    color: #F2F2F2;
+    color: #F2F2F2; 
 }
 
 .intro h1{
@@ -153,7 +156,7 @@ nav{
 }
 
 .intro p {
-    font-size: 15px;
+    font-size: 18px;
     line-height: 1.2;
     font-family: 'Lato', sans-serif;
 }
@@ -300,11 +303,13 @@ nav{
 }
 
 .advanced__features--info div img{
-    width: 30px;
-    height: 30px;
+    width: 50px;
+    height: 50px;
     display: block;
     margin: 0 auto 10px; /* Center image and add spacing */
-    
+    padding: 5px;
+    background-color: rgb(227, 216, 237);
+    border-radius: 50%;
 }
 
 .advanced__features--info p{
@@ -421,8 +426,9 @@ nav{
 }
 
 .pricing__container--item p{
-    font-size: 12.8px;
+    font-size: 14px;
     text-align: center;
+    margin: 5px;
 }
 
 .price{
@@ -485,6 +491,7 @@ nav{
     color: white;
     border: none;
     padding: 10px 20px;
+    margin: 0 auto;
 }
 
 .footer{
@@ -527,7 +534,11 @@ nav{
 
 .footer.follow__us{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+}
+
+.footer.subscribe.email{
+    padding: 15px 10px;
 }
 
 .footer__copyright--info{
@@ -648,6 +659,10 @@ nav{
     
     .pricing__container--item h4{
         font-size: 30px;
+    }
+
+    .pricing__container--item p{
+        font-size: 20px;
     }
     
     .price{
@@ -901,7 +916,7 @@ nav{
     }
     
     .pricing__container--item .standard__button{
-        font-size: 25px;
+        font-size: 20px;
         margin-top: -20px;
         margin-left: -65px;
         padding: 10px 15px;
@@ -917,8 +932,7 @@ nav{
     }
 
     .footer__container--interested h3{
-        font-size: 35px;
-        
+        font-size: 35px; 
     }
 
     .footer__links{
