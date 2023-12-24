@@ -525,6 +525,11 @@ nav{
     font-size: 12px;
 }
 
+.footer.follow__us{
+    display: flex;
+    flex-direction: row;
+}
+
 .footer__copyright--info{
     display: flex;
     flex-direction: column;
@@ -540,7 +545,7 @@ nav{
 
 
 /* MEDIA QUERIES */
-@media screen and (min-width:769px) and (max-width: 1024px){
+@media screen and (min-width:767px){
 
     /* HEADER */
     .header__image {
