@@ -26,7 +26,7 @@ p{
 
 button{
     cursor: pointer;
-    font-family: 'Lato', sans-serif;
+    font-family: inherit;
 }
 
 .download__button{
@@ -39,6 +39,17 @@ button{
     font-weight: 600;
     border-radius: 5px;
     border: none;
+}
+
+.download__button svg,
+.intro__button svg{
+    fill: white;
+    width: 25px;
+    height: 25px;
+}
+
+.intro__button svg{
+    fill: darkslateblue;
 }
 
 .info__button{
@@ -103,7 +114,6 @@ button{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Inter', sans-serif;
     margin-top: 80px;
     position: absolute;
     top: 0; /* Align to the top of the header */
@@ -115,18 +125,17 @@ button{
 }
 
 .page__title{
-    text-align: left;
+    text-align: center;
     margin-bottom: 0;
 }
 
 nav{
     width: 100%;
     display: block;
-    text-align: start;
 }
 
 .nav ul{
-    text-align: left;
+    align-items: left;
     display: block;
     margin: 0 auto;
 }
@@ -141,6 +150,7 @@ nav{
 .nav li a{
     text-decoration: none;
     color: rgb(221, 207, 188);
+    align-items: flex-start;
 }
 
 .nav li a:hover{
@@ -160,7 +170,15 @@ nav{
 .intro p {
     font-size: 18px;
     line-height: 1.2;
-    font-family: 'Lato', sans-serif;
+}
+
+.header__reviews{
+    flex-basis: 50%;
+}
+
+.header__reviews img{
+    display: none;
+    align-self: flex-end;
 }
 
 /* About && Tools */
@@ -177,12 +195,12 @@ nav{
 
 .about__image img,
 .tools__image img{
-    width: 50%;
-    /* max-width: 100%; */
+    width: 100%;
     height: auto; /* Maintain aspect ratio */
-    /* margin: auto; */
     display: block;
     background-color: white;
+    padding: 10px;
+    box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.5);
 }
 
 .about__info,
@@ -199,15 +217,11 @@ nav{
 .tools__info p{
     font-size: 15px;
     font-family: 'Space Mono', monospace;
-    line-height: 20px;
+    line-height: 1.2;
     text-align: justify;
 }
 
 /* Achievement */
-.achievement{ 
-  font-family: 'Inter', sans-serif;
-}
-
 .achievement__info{
     display: flex;
     flex-direction: row;
@@ -274,7 +288,6 @@ nav{
 .pricing{
     text-align: center;
     margin-top: 50px;
-    font-family: 'Inter', sans-serif;
 }
 
 .advanced__features--header p,
@@ -333,19 +346,16 @@ nav{
 }
 
 /* Feedback */
-.feedback{
-    font-family: 'Inter', sans-serif;
-}
-
 .feedback__messages--container{
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
-    width: 100%;
-    margin: -20px auto 0;
+    width: 80%;
+    margin: auto;
     padding: 0 50px;
     text-align: center;
+    z-index: 1;
 }
 
 .feedback__messages{
@@ -370,7 +380,8 @@ nav{
     height: 40px;
     object-fit: cover;
     border-radius: 50%;
-    margin-left: -5px;
+    align-items: center;
+    margin: 5px 0 -15px 0;
 }
 
 .feedback__client--info div{
@@ -397,7 +408,6 @@ nav{
 .pricing{
     text-align: center;
     margin-top: 60px;
-    font-family: 'Inter', sans-serif;
 }
 
 .pricing__header p{
@@ -467,7 +477,6 @@ nav{
 /* Footer */
 .footer__container{
     width: 100%;
-    font-family: 'Inter', sans-serif;
 }
 
 .footer__container--interested{
@@ -540,13 +549,12 @@ nav{
 
 .footer .follow__us ul{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
-    
     margin-top: 5px;
 }
 
-.footer .follow__us ul img{
+.follow__us ul li a svg{
     fill: white;
 }
 
@@ -554,15 +562,17 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 35px 10px 10px;
+    padding: 5px 25px 5px 10px;
+    /* padding: 10px 35px 10px 10px; */
     margin-top: 5px;
     border-radius: 5px;
     border: none;
     font-size: 15px;
 }
 
-.footer .email img{
-    text-align: right;
+.footer .email svg{
+    margin-left: 28px;
+    fill: darkslategray;
 }
 
 .footer__copyright--info{
@@ -606,8 +616,15 @@ nav{
     }
 
     .intro__container{
-        width: 50%;
+        width: 100%;
+        gap: 10px;
+        justify-content: space-between;
         margin-top: 70px;
+    }
+
+    .intro{
+        flex-basis: 50%;
+        margin: 0;
     }
 
     .intro h1{
@@ -616,6 +633,13 @@ nav{
 
     .intro p{
         font-size: 18px;
+    }
+
+    .header__reviews img{
+        display: inline-block;
+        width: 400px;
+        height: auto;
+        align-items: center;
     }
 
     .download__button{
@@ -714,6 +738,14 @@ nav{
         justify-content: space-between;
     }
 
+    .footer .follow__us ul{
+        flex-direction: row;
+    }
+
+    .footer .subscribe .email{
+        padding: 10px 35px 10px 10px;
+    }
+
     .footer__copyright--info{
         flex-direction: row;
         justify-content: space-between;
@@ -732,7 +764,7 @@ nav{
     }
 
     .nav__container{
-        padding: 5px 140px 10px 140px;
+        /* padding: 5px 140px 10px 140px; */
         display: flex;
         justify-content: center;
         align-items: center;
@@ -751,9 +783,15 @@ nav{
     }
 
     .intro__container{
-        padding: 5px 140px 10px 140px;
-        margin-bottom: 20px;
-        width: 70%;
+        width: 100%;
+        gap: 10px;
+        justify-content: space-between;
+        margin: 70px 0 20px;
+    }
+
+    .intro{
+        flex-basis: 50%;
+        margin: 0;
     }
 
     .intro h1{
@@ -762,6 +800,15 @@ nav{
 
     .intro p{
         font-size: 25px;
+    }
+
+    .header__reviews img{
+        display: inline-block;
+        width: 500px;
+        height: auto;
+        align-items: center;
+        margin-left: 30px;
+        object-fit:scale-down;
     }
 
     .download__button{
@@ -796,7 +843,6 @@ nav{
     .about__info p,
     .tools__info p{
         font-size: 20px;
-        line-height: 1;
     }
 
     /* ACHIEVEMENT */
@@ -896,8 +942,6 @@ nav{
 
     .feedback__messages > p{
         font-size: 18px;
-        font-style: italic;
-        color: navy;
     }
 
     .feedback__client--info{
@@ -906,7 +950,7 @@ nav{
     }
 
     .feedback__client--info img{
-        margin-left: -100px;
+        margin-left: -15px;
     }
 
     .feedback__client--info div h3{
@@ -977,6 +1021,10 @@ nav{
         font-size: 15px;
         line-height: 1.5;
         color: rgb(241, 235, 235);
+    }
+
+    .footer .subscribe .email{
+        padding: 10px 35px 10px 10px;
     }
 
     .footer__copyright--info{
