@@ -187,7 +187,7 @@ nav{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
     justify-content: center;
     padding: 10px 60px;
     font-family: 'Ubuntu', sans-serif;
@@ -198,8 +198,8 @@ nav{
     width: 100%;
     height: auto; /* Maintain aspect ratio */
     display: block;
-    background-color: white;
-    padding: 10px;
+    background-color: darkorchid;
+    padding: 15px 20px;
     box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.5);
 }
 
@@ -590,7 +590,7 @@ nav{
 
 
 /* MEDIA QUERIES */
-@media screen and (min-width:767px){
+@media screen and (min-width:767px) and (max-width:1024px){
 
     /* HEADER */
     .header__image {
